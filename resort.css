@@ -1,0 +1,432 @@
+body{
+margin: 0;
+overflow-x: hidden;
+}
+
+/* Background image 1st frame*/
+
+.welcome{
+background-image: url("https://res.cloudinary.com/dbrrwlzjo/image/upload/v1596873166/SmallMobileBackground_rftb7x.jpg");
+position: static;
+display: block;
+height: 100vh;
+width: auto;
+overflow: hidden;
+}
+
+
+@media only screen and (min-width:412px  ) {
+  .welcome {
+  background-image:url("https://res.cloudinary.com/dbrrwlzjo/image/upload/v1596872174/NavMobile_hcxki1.jpg") ;
+  height: 100vh;
+  margin-bottom: 80px;
+  }
+}
+
+
+@media only screen and (min-width:769px  ) {
+  .welcome {
+  background-image:url("https://res.cloudinary.com/dbrrwlzjo/image/upload/v1596890028/BackgroundMidi_s21ack.jpg") ;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width:1999px  ) {
+  .welcome {
+  background-image:url("https://res.cloudinary.com/dbrrwlzjo/image/upload/v1596890142/BackgroundMaxi_gdricw.jpg") ;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+}
+
+
+/* Logo */
+.logo{
+margin-top: -80vh;
+display: block;
+margin-left: auto;
+margin-right: auto; 
+width: 40vh;
+height: 40vh;
+border-radius: 5px;
+Opacity: 90%
+}
+
+
+.explore{
+position: relative;
+display: block;
+margin-left: auto;
+margin-right: auto; 
+margin-top: 5vh;
+font-family: 'Quicksand', sans-serif;
+font-size: 40px;
+color: #945404;
+background: rgba(255, 255, 255, 0.7);
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 5px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 7px;
+padding-bottom: 7px;
+letter-spacing: 0.02em;
+cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+
+}
+
+  
+  .ham {
+    position: fixed;
+    /* always keep ham on top of everything */
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("https://res.cloudinary.com/dbrrwlzjo/image/upload/v1596874588/iconmonstr-menu-5-240_gp6axm_hog9ob.png");
+    background-size: 100%;
+}
+  
+@media only screen and (min-width:769px  ) {
+  .ham {
+   display: none;  
+  }
+}
+  /* change ham image to close */
+  .showClose {
+    
+    background-image: url("https://res.cloudinary.com/dbrrwlzjo/image/upload/v1596874538/iconmonstr-x-mark-4-240_rifhev.png");  
+}
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: url("https://res.cloudinary.com/dbrrwlzjo/image/upload/v1596873166/SmallMobileBackground_rftb7x.jpg");
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    /* hide the menu above the screen by default */
+    transform: translateY(-100%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+   }
+
+   @media only screen and (min-width:412px  ) {
+    .navbar {
+      background-image:url("https://res.cloudinary.com/dbrrwlzjo/image/upload/v1596872173/BackgroundMobile_wumsls.jpg");
+    
+    }
+  }
+
+    .fixedNav {
+      position: fixed;
+      width: 100vw;
+      z-index: 5;
+      background-color: #945404;
+      justify-items: center;
+      display: grid;
+      grid-template-columns:1fr 20%  20% 20% 1fr;
+      grid-template-areas: 
+      "Logo Rooms Culinary Wellness Book";
+      opacity: 90%;
+    }
+
+  @media only screen and (max-width: 769px) {
+.fixedNav {
+display: none;
+}}
+
+    .fixedNav a {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      margin-top: 3px;
+      margin-right: 50px;
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 36px;
+      font-family: 'Sanchez', serif;
+    }
+
+    .fixedNav a:hover{
+    font-weight: bold;
+    }
+
+    .fixedLogo{
+      width:150px;
+    }
+  .menubox{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    text-align: center;
+    left: 10vw;
+    right: 10vw;
+    top: 10vh;
+    bottom: 10vh;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .showNav {
+    /* show the menu */
+    transform: translateY(0);
+  }
+  /* basic nav styling below */
+
+  .navbar ul {
+    list-style: none; 
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .navbar ul li{
+  margin: 4vh;
+  }
+
+
+
+  .navbar ul li a {
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;   
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #945404;
+  }
+  
+
+  .navbar ul li a:hover, .navbar ul li a:focus, .explore:hover {
+   font-weight: 900;
+  }
+
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    width: 100vw;
+    background-color: #945404;
+    text-align: center;
+    opacity: 90%;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 36px;
+  }
+
+  .frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .frame{
+  flex-direction: row;
+  margin-bottom: 50px;
+  padding-top: 150px;
+  }}
+  
+  
+  #rooms{
+    margin-top: 200px;
+    }
+  
+  h1{
+  font-size: 30px;
+  font-family: 'Sanchez', serif;
+  text-align: center;
+  color: #140700;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    h1{
+  font-size: 38px;
+    }}
+  
+  p{
+  font-family: 'Quicksand', sans-serif;   
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: justify;
+  text-indent: 20px;
+  }
+  
+  @media only screen and (min-width: 769px) {
+   p{
+    font-size: 22px;
+  }}
+  
+  @media only screen and (min-width: 769px) {
+    .about{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 152px;
+    width: 600px;
+    line-height: 2;
+      }}
+  
+  @media only screen and (min-width: 769px) {
+    #culinary {
+      flex-direction: row-reverse;
+     }}
+  
+    
+   @media only screen and (min-width: 769px) {
+    #culinaryPics {
+      margin-right: 150px;
+    }}
+  
+   @media only screen and (min-width: 769px) {
+    #culinaryText {
+        margin-left: 150px;
+        margin-right: -20px;
+   }}
+  
+  
+  .picText{
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;   
+  }
+  
+  .slideshowContainer {
+  width: 100vw;
+  position: relative;
+  margin: auto;
+  }
+  
+     
+  @media only screen and (min-width: 769px) {
+    .slideshowContainer {
+    max-width: 650px;
+    margin-left: 150px;
+    }}
+  
+      .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+  
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+  
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+  
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .numbertext {
+      font-family: 'Quicksand', sans-serif;  
+      color: white;
+      font-size: 14px;
+      padding: 20px 12px;
+      position: absolute;
+      top: 0;
+    }
+  
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+  
+  
+  #bookNow{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    line-height: 2;
+  }
+  
+  .bookText{
+    display: flex;
+    text-align: center;
+    margin-bottom: -150px;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Sanchez', serif;
+    font-size: 36px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .bookText {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 32px;
+  line-height: 1;
+    }}
+  
+  .painter {
+    margin-bottom: -200px;}
+    
+  @media only screen and (min-width: 769px) {
+    .painter {
+  margin-bottom: -200px;
+    }}

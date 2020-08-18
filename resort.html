@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Resort Mockup</title>
+    <link rel="stylesheet" href="./resort.css">   
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <!-- Mobile Nav -->
+<button class="ham"></button>
+<nav class="navbar" id="navbar" >
+    <div class="menubox">
+  <ul>
+    <li><a class="menuLink" href="#rooms">Suites</a></li>
+    <li><a class="menuLink" href="#culinary">Culinary</a></li>
+    <li><a class="menuLink" href="#wellness">Wellness</a></li>
+    <li><a class="menuLink" href="#bookNow">Book Now</a></li>
+  </ul>
+</nav>
+<!-- Nav for screen sizes above 769px  -->
+<div class="gridContainer">
+<nav class="fixedNav">
+  <a href="#welcome"><img class="fixedLogo"  src="https://res.cloudinary.com/dbrrwlzjo/image/upload/v1597759738/White_Lotus_nobackground_-removebg-preview_rl4jsi.png" alt="White Lotus Resort and Spa"></a>
+  <a  href="#rooms">Suites</a>
+  <a  href="#culinary">Culinary</a>
+  <a  href="#wellness">Wellness</a>
+  <a  href="#bookNow">Book Now</a>
+</nav>
+</div>
+    <div class="welcome" id="welcome"> 
+  </div>
+   <div>
+    <img class="logo"  src="https://res.cloudinary.com/dbrrwlzjo/image/upload/v1596533916/White_Lotus_3_qsnhut.png" alt="White Lotus Resort and Spa">
+    <button class="explore" onclick="window.location.href = '#rooms';">EXPLORE</button>
+</div>
+
+<div class="frame"  id="rooms">
+<!-- Gallery setup for room sec -->
+<div class="slideshowContainer">
+  
+  <div class="roomSlides fade">
+  <div class="numberText">1 / 4</div>
+  <img src="https://res.cloudinary.com/dbrrwlzjo/image/upload/v1597480445/RommPic1_jkkgte.jpg" alt="A bamboo chair in a lounge, a bit of the private pool in the background"style="width: 100%;">
+  <div class="picText">Lounge Courtyard</div>
+  </div>
+
+  <div class="roomSlides fade">
+    <div class="numberText">2 / 4</div>
+    <img src="https://res.cloudinary.com/dbrrwlzjo/image/upload/v1597480444/RoomPic4_oi1mpu.jpg" alt="King size bed against concrete wall" style="width: 100%;">
+    <div class="picText">Bedroom with King Size Bed</div>
+    </div>
+
+    <div class="roomSlides fade">
+      <div class="numberText">3 / 4</div>
+      <img src="https://res.cloudinary.com/dbrrwlzjo/image/upload/v1597480445/RoomPic3_sondkn.jpg" alt="Bathroom with copper bathtub and outside shower" style="width: 100%;">
+      <div class="picText">Private Spa with Outside Shower</div>
+      </div>
+
+      <div class="roomSlides fade">
+        <div class="numberText">4 / 4</div>
+        <img src="https://res.cloudinary.com/dbrrwlzjo/image/upload/v1597480446/RoomPic2_enshsm.jpg" alt="Woman jumps into private pool" style="width: 100%;">
+        <div class="picText">Private Pool</div>
+        </div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<div class="about">
+ <h1>Superior Suites</h1>
+  <p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Laborum quia voluptatibus reiciendis cupiditate expedita qui, 
+  inventore non alias sequi tempora aliquam perferendis fuga saepe 
+  mollitia minima, voluptatum iste quos eligendi est ab error magni 
+  magnam quisquam. In beatae a quis sint. Beatae omnis corporis placeat. 
+  </p>
+</div>
+</div>
+
+<div class="frame" id="culinary">
+<!-- Gallery setup for culinary sec -->
+
+<div class="slideshowContainer" id="culinaryPics">
+  
+  <div class="culinarySlides fade">
+  <div class="numberText">1 / 3</div>
+  <img src="https://res.cloudinary.com/dbrrwlzjo/image/upload/v1597589447/Curry_vjrse1.jpg" alt="A modern interpretation of a Curry on a black plate"style="width: 100%;">
+  <div class="picText">Modern Fusion Kitchen</div>
+  </div>
+
+  <div class="culinarySlides fade">
+    <div class="numberText">2 / 3</div>
+    <img src="https://res.cloudinary.com/dbrrwlzjo/image/upload/v1597589450/Mimosa_hrwone.jpg" alt="Samosas on thick orange sauce, served on a black plate" style="width: 100%;">
+    <div class="picText">Gourmet Comfort Food</div>
+    </div>
+
+    <div class="culinarySlides fade">
+      <div class="numberText">3 / 3</div>
+      <img src="https://res.cloudinary.com/dbrrwlzjo/image/upload/v1597589448/DessertBuffet_uvxybs.jpg" alt="Extravagant dessert buffet with lots of small pastries" style="width: 100%;">
+      <div class="picText">Broad Patisserie Selection</div>
+      </div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onClick="plusSlides(-1, 1)">&#10094;</a>
+<a class="next" onClick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<div class="about" id="culinaryText">
+  <h1>World Class Culinary</h1>
+   <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  Laborum quia voluptatibus reiciendis cupiditate expedita qui, 
+  inventore non alias sequi tempora aliquam perferendis fuga saepe 
+  mollitia minima, voluptatum iste quos eligendi est ab error magni 
+  magnam quisquam. In beatae a quis sint. Beatae omnis corporis placeat. 
+   </p>
+ </div>
+ </div>
+ 
+ <div class="frame" id="wellness">
+ <!-- Picture setup for Wellness sec -->
+  <div class="slideshowContainer">
+  <div class="wellnessPic">
+    <img src="https://res.cloudinary.com/dbrrwlzjo/image/upload/v1597581050/WellnessResort_qkclcq.jpg" alt="Women gets a massage by massage therapist" style="width: 100%;">
+    <div class="picText">Premium Spa Experience</div>
+    </div>
+  </div>
+
+
+  <div class="about">
+    <h1>Endless Relaxation</h1>
+     <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Laborum quia voluptatibus reiciendis cupiditate expedita qui, 
+      inventore non alias sequi tempora aliquam perferendis fuga saepe 
+      mollitia minima, voluptatum iste quos eligendi est ab error magni 
+      magnam quisquam. In beatae a quis sint. Beatae omnis corporis placeat. 
+     </p>
+   </div>
+   </div>
+
+   <div class="frame" id="bookNow">
+     <h2 class="bookText"> We can't wait to welcome you! 
+     </br> 
+      We are open for booking from the 1st of March 2030.</h2>
+<img class="painter"src="https://res.cloudinary.com/dbrrwlzjo/image/upload/v1597762092/download_1_r6kdpi.png" alt="Painter with Paintroll">
+
+   </div>
+
+
+
+
+   <footer>
+Design by Maria Rohrmann
+   </footer>
+
+<script src="resort.js"></script>
+
+
+</body>
+</html>
