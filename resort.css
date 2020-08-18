@@ -333,7 +333,7 @@ display: none;
      
   @media only screen and (min-width: 769px) {
     .slideshowContainer {
-    max-width: 650px;
+    max-width: 600px;
     margin-left: 150px;
     }}
   
