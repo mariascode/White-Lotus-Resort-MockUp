@@ -409,7 +409,7 @@ display: none;
   .bookText{
     display: flex;
     text-align: center;
-    margin-bottom: -150px;
+    margin-bottom: -5em;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Sanchez', serif;
     font-size: 36px;
