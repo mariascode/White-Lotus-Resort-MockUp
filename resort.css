@@ -268,7 +268,7 @@ display: none;
   font-size: 30px;
   font-family: 'Sanchez', serif;
   text-align: center;
-  color: #140700;
+  color:#303030;;
   }
   
   @media only screen and (min-width: 769px) {
@@ -283,6 +283,7 @@ display: none;
   padding-right: 30px;
   text-align: justify;
   text-indent: 20px;
+  color:#000000;
   }
   
   @media only screen and (min-width: 769px) {
@@ -413,6 +414,7 @@ display: none;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Sanchez', serif;
     font-size: 36px;
+    color:#303030;
     padding-left: 30px;
     padding-right: 30px;
     line-height: 2;
